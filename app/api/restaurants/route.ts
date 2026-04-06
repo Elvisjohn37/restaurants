@@ -5,7 +5,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url)
     const city = searchParams.get("city")
     const API_KEY = process.env.NEXT_PUBLIC_YELP_API_KEY
-    const miles = 8046 // 5 miles
+    const miles = 8046 // 5 miles, 1 mitre = 1609.34
 
     if (!city || !API_KEY) {
         return NextResponse.json(
