@@ -2,7 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, create .env.local and put this environment variable:
+NEXT_PUBLIC_YELP_API_KEY=<your_api_key>
+
+Second, run the development server:
 
 ```bash
 npm run dev
